@@ -149,7 +149,7 @@ function Home() {
             </div>
             <hr className="w-full h-1 mx-auto my-3 bg-gray-400 border-0 rounded md:my-3 dark:bg-gray-700" />
             <div
-              className="w-full h-[24rem] overflow-y-auto scrollbar"
+              className="w-full h-[24.5rem] overflow-y-auto scrollbar"
               id="style-1"
             >
               {dataAnggota.map((item, index) => (
@@ -252,26 +252,30 @@ function Home() {
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Results
           </h5>
-
-          <div className="grid sm:grid-cols-2">
-            {/* {nokel.map((no, index) => ( */}
-            {dataKelompok.map((group, index) => (
-              <div
-                key={index}
-                className="border-2 rounded  border-gray-300 m-2"
-              >
-                <h1 className="bg-gray-300 pl-3">Team {index + 1}</h1>
-                <div className="p-3 text-black dark:text-white ">
-                  {showResults && (
-                    <div>
-                      {group.map((member, memberIndex) => (
-                        <p key={memberIndex}>{member.name}</p>
-                      ))}
-                    </div>
-                  )}
+          <div
+            className="w-full h-[29rem] overflow-y-auto scrollbar"
+            id="style-1"
+          >
+            <div className="grid sm:grid-cols-2">
+              {/* {nokel.map((no, index) => ( */}
+              {dataKelompok.map((group, index) => (
+                <div
+                  key={index}
+                  className="border-2 rounded  border-gray-300 m-2"
+                >
+                  <h1 className="bg-gray-300 pl-3">Team {index + 1}</h1>
+                  <div className="p-3 text-black dark:text-white ">
+                    {showResults && (
+                      <div>
+                        {group.map((member, memberIndex) => (
+                          <p key={memberIndex}>{member.name}</p>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
         {/* End Results */}

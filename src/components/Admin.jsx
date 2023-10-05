@@ -88,28 +88,33 @@ function Admin() {
               </button>
             </div>
             <hr className="w-full h-1 mx-auto my-3 bg-gray-400 border-0 rounded md:my-3 dark:bg-gray-700" />
-            {dataAnggota.map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-300 dark:bg-gray-200 rounded-lg w-full py-2.5 px-4 mb-2 flex items-center justify-between"
-              >
-                <p className="text-gray-900 break-words dark:text-gray-400">
-                  {item.name}
-                </p>
-                <div>
-                  <button
-                    onClick={() => updateFixStatus(index)}
-                    className={`text-white mr-3 ${
-                      item.status ? "bg-blue-700" : "bg-red-700"
-                    } hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 dark:${
-                      item.status ? "bg-blue-600" : "bg-red-600"
-                    } dark:hover:bg-ref-700 dark:focus:ring-blue-800`}
-                  >
-                    {item.status ? "True" : "False"}
-                  </button>
+            <div
+              className="w-full h-[24.5rem] overflow-y-auto scrollbar"
+              id="style-1"
+            >
+              {dataAnggota.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-300 dark:bg-gray-200 rounded-lg w-full py-2.5 px-4 mb-2 flex items-center justify-between"
+                >
+                  <p className="text-gray-900 break-words dark:text-gray-400">
+                    {item.name}
+                  </p>
+                  <div>
+                    <button
+                      onClick={() => updateFixStatus(index)}
+                      className={`text-white mr-3 ${
+                        item.status ? "bg-blue-700" : "bg-red-700"
+                      } hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 dark:${
+                        item.status ? "bg-blue-600" : "bg-red-600"
+                      } dark:hover:bg-ref-700 dark:focus:ring-blue-800`}
+                    >
+                      {item.status ? "True" : "False"}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </form>
         </div>
         {/* End Inputs */}
