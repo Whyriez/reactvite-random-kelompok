@@ -219,6 +219,7 @@ function Home() {
           </div>
           <div className="flex items-center mt-4">
             <h3 className="mr-9">Max Anggota :</h3>
+            <h3 className="mr-9">Max Anggota :</h3>
             <input
               type="number"
               id="visitors"
