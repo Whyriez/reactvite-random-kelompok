@@ -57,7 +57,7 @@ function Admin() {
     <div>
       <div className="md:block lg:flex xl-flex sm:block space-x-6">
         {/* Start Inputs */}
-        <div className="block w-[30rem] h-[35rem] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  ">
+        <div className="block lg:w-full md:mx-auto sm:w-[37rem] h-[35rem] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  ">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Inputs
           </h5>
@@ -119,13 +119,12 @@ function Admin() {
         </div>
         {/* End Inputs */}
 
-        {/* Start Results */}
+        {/* 
         <div className="block w-[30rem] h-[35rem] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  ">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Results
           </h5>
-        </div>
-        {/* End Results */}
+        </div> */}
       </div>
     </div>
   );
