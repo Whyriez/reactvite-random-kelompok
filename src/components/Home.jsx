@@ -174,12 +174,12 @@ function Home() {
         {/* End Inputs */}
 
         {/* Start Controller */}
-        <div className="block max-w-sm h-[25rem] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  ">
+        <div className="block w-[17rem] h-[25rem] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  ">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Controller
           </h5>
-          <div className="flex items-center">
-            <h3 className="mr-8">Total Anggota :</h3>
+          <div className="flex items-center justify-between">
+            <h3>Total Anggota :</h3>
             <input
               type="number"
               id="visitors"
@@ -190,14 +190,14 @@ function Home() {
                   setJumAng(inputValue);
                 }
               }}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-16 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-14 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder=""
               required
             />
             <h3 className="ml-1">/{dataAnggota.length}</h3>
           </div>
-          <div className="flex items-center mt-4">
-            <h3 className="mr-">Nomor Kelompok :</h3>
+          <div className="flex items-center mt-4 justify-between">
+            <h3>Nomor Kelompok :</h3>
             <input
               type="number"
               id="visitors"
@@ -212,13 +212,13 @@ function Home() {
                   setShowResults(false);
                 }
               }}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-16 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-14 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder=""
               required
             />
           </div>
-          <div className="flex items-center mt-4">
-            <h3 className="mr-9">Max Anggota :</h3>
+          <div className="flex items-center justify-between mt-4">
+            <h3>Max Anggota :</h3>
             <input
               type="number"
               id="visitors"
@@ -232,7 +232,7 @@ function Home() {
                   setNoKel(me2);
                 }
               }}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-16 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-14 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder=""
               required
             />
